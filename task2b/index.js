@@ -1,18 +1,22 @@
 function add(numb1, numb2) {
-  let num1 = String(numb1);
-  return num1 + numb2;
+  let num1 = Number(numb1);
+  let num2 = Number(numb2);
+  return num1 + num2;
 }
 
 function multiply(num1, operator, num2) {
-  num1, operator, num2;
+  if (operator === "*") {
+    return num1 * num2;
+  } else {
+    return "Invalid inputs. Try again!";
+  }
 }
 
 function hasPets(hasPet, firstName, lastName) {
-  if (hasPet === "true") {
-    return firstName + " " + lastName + " really does have a nice pet";
+  if (hasPet === true) {
+    return `${firstName} ${lastName} has a pet`;
   } else {
-    return;
-    firstName + " " + lastName + " " + "has no pets";
+    return `${firstName} ${lastName} does not have a pet`;
   }
 }
 
@@ -31,24 +35,23 @@ function addsBalanceOfAccounts() {
 
 function calculator(firstNumber, operator, secondNumber) {
   if (operator === "+") {
-    let answer = firstNumber + secondNumber;
-    return;
+    return firstNumber + secondNumber;
+  
   }
   if (operator === "-") {
-    let answer = firstNumber - secondNumber;
-    return;
+    return firstNumber - secondNumber;
+     
   }
   if (operator === "*") {
-    let answer = firstNumber * secondNumber;
-    return;
+    return firstNumber * secondNumber;
+     
   }
   if (operator === "/") {
-    let answer = firstNumber / secondNumber;
-    return;
+    return firstNumber / secondNumber;
+    
   } else {
-    let answer = "Invalid inputs. Try again!";
-    return;
-    answer;
+    return "Invalid inputs. Try again!";
+    
   }
 }
 
